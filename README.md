@@ -74,7 +74,23 @@ docker run -d \
   --name cyberpam \
   -p 8080:8080 \
   mattrogers/cyberpam:latest
+```
 
+## ⚡️NOTICE - GET YOUR ADMIN PASSWORD👋
+
+Access the web interface at `http://localhost:8080` after starting the container. The initial admin credentials will be displayed in the container logs:
+
+```bash
+# View initial admin credentials
+docker logs cyberpam
+```
+
+![CyberPAM Login](media/password.png)
+
+
+### 📂 External Recordings Storage
+
+```
 # Run with external recordings storage
 docker run -d \
   --name cyberpam \
@@ -89,14 +105,7 @@ The `/recordings` volume binding is optional but recommended for:
 - Sharing recordings between container recreations
 - Integration with external video processing tools
 
-Access the web interface at `http://localhost:8080` after starting the container. The initial admin credentials will be displayed in the container logs:
 
-```bash
-# View initial admin credentials
-docker logs cyberpam
-```
-
-![CyberPAM Login](media/password.png)
 
 ## 🔧️ Security Notice
 
