@@ -225,30 +225,6 @@ Internet -> Cloudflare Zero Trust -> Reverse Proxy (TLS/Cloudflared) -> CyberPAM
   </table>
 </div>
 
-## 🔜 Roadmap
-
-1. HTTP Protocol Support
-   - Browser isolation
-   - Security controls
-   - Recording support
-
-2. Enhanced Security
-   - External authentication
-   - Certificate management
-   - Enhanced audit
-   - Security scanning
-
-3. Performance Optimization
-   - Connection pooling
-   - Load balancing
-   - Resource management
-   - Cache implementation
-
-4. Advanced Features
-   - Search functionality
-   - Advanced filtering
-   - Batch operations
-   - Report generation
 
 <div align="center">
 
