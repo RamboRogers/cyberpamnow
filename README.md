@@ -13,7 +13,7 @@
   <p><strong>Zero Trust Privileged Access Management</strong></p>
   <p>🔐 Zero Trust | 🎥 Session Recording | 🌐 Multi-Protocol | 🔒 ABAC Security | 🎨 Beautiful UI</p>
   <p>
-    <img src="https://img.shields.io/badge/version-0.1.0c-blue.svg" alt="Version 0.1.0c">
+    <img src="https://img.shields.io/badge/version-0.1.0c-blue.svg" alt="Version 0.1.1c">
     <img src="https://img.shields.io/badge/go-%3E%3D1.21-00ADD8.svg" alt="Go Version">
     <img src="https://img.shields.io/badge/platform-linux%20%7C%20macos-brightgreen.svg" alt="Platform Support">
     <img src="https://img.shields.io/badge/license-GPLv3-green.svg" alt="License">
@@ -22,59 +22,107 @@
 
 CyberPAM is a comprehensive Zero Trust Privileged Access Management solution designed for secure access to Windows, UNIX systems, and web applications. With its beautiful dark-themed interface and robust security features, it provides enterprise-grade access control and session monitoring capabilities.
 
+## Version CyberPam 0.1.1c
+
+***Please keep the issues and enhancement requests coming!***
+
+- New Recording UI (with status and storage)
+  - Fixes issues with transcoding (was scripted)
+  - Event driven transcoding with nice UI
+- Added SSH Key Authentication
+- Added more fonts (bugfix)
+- Reworked container storage (db persistence)
+  - Allows for easier upgrades and backups
+
+![New Recording](media/recordings2.png)
+
 ## 🌟 Features
 
-### Security & Access Control
-- Zero Trust Architecture with ABAC (Attribute Based Access Control)
-- Multi-factor authentication with mandatory TOTP
-- Granular access control with 4 security levels
-- Comprehensive audit logging for compliance
-- Session recording with video playback
-- Password complexity enforcement
-
-### Protocol Support with Session Recording
-- RDP (Remote Desktop Protocol)
-- SSH (Secure Shell)
-- HTTP/HTTPS (planned)
-
-### Session Recording
-- Full video recording of all sessions
-- Automatic video conversion
-- Secure storage management
-- Playback controls with timeline
-- Download capabilities
-- Access control based on ABAC levels
-
-### User Management
-- Local user authentication
-- Role-based access control
-- TOTP (2FA) requirement
-- Password complexity rules
-- Session management
-- Failed attempt tracking
-
-### Beautiful Interface
-- Dark-themed modern UI
-- Matrix-style animations
-- Responsive design
-- Protocol-based grouping
-- Role-based navigation
-- Enhanced modals
+<table style="width:100%; border-collapse: collapse;">
+  <tr>
+    <td style="vertical-align: top; padding: 10px; border: 1px solid #ddd;">
+      <h3 style="margin-top: 0;">Security & Access Control</h3>
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li>🔒 Zero Trust Architecture with ABAC</li>
+        <li>🔑 Multi-factor authentication with mandatory TOTP</li>
+        <li>🔍 Granular access control with 4 security levels</li>
+        <li>📝 Comprehensive audit logging for compliance</li>
+        <li>🎥 Session recording with video playback</li>
+        <li>🔐 Password complexity enforcement</li>
+      </ul>
+    </td>
+    <td style="vertical-align: top; padding: 10px; border: 1px solid #ddd;">
+      <h3 style="margin-top: 0;">Protocol Support with Session Recording</h3>
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li>🖥️ RDP (Remote Desktop Protocol)</li>
+        <li>🔗 SSH (Secure Shell)</li>
+        <li>🌐 HTTP/HTTPS (planned)</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top; padding: 10px; border: 1px solid #ddd;">
+      <h3 style="margin-top: 0;">Session Recording</h3>
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li>📹 Full video recording of all sessions</li>
+        <li>🔄 Automatic video conversion</li>
+        <li>🔒 Secure storage management</li>
+        <li>⏱️ Playback controls with timeline</li>
+        <li>⬇️ Download capabilities</li>
+        <li>🔐 Access control based on ABAC levels</li>
+      </ul>
+    </td>
+    <td style="vertical-align: top; padding: 10px; border: 1px solid #ddd;">
+      <h3 style="margin-top: 0;">User Management</h3>
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li>👤 Local user authentication</li>
+        <li>🔑 Role-based access control</li>
+        <li>🔒 TOTP (2FA) requirement</li>
+        <li>🔐 Password complexity rules</li>
+        <li>🕒 Session management</li>
+        <li>🚫 Failed attempt tracking</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="vertical-align: top; padding: 10px; border: 1px solid #ddd;">
+      <h3 style="margin-top: 0;">Beautiful Interface</h3>
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li>🌑 Dark-themed modern UI</li>
+        <li>🖥️ Matrix-style animations</li>
+        <li>📱 Responsive design</li>
+        <li>🔗 Protocol-based grouping</li>
+        <li>🔑 Role-based navigation</li>
+        <li>🖼️ Enhanced modals</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ## 🚀 Quick Start
 
 CyberPAM is distributed as a Docker container for easy deployment and a 5 minute setup:
 
+ *You can just copy paste this into your terminal 🖥️ to deploy or upgrade*
 ```bash
 # Pull the latest image
 docker pull mattrogers/cyberpam:latest
 
+docker stop cyberpam
+docker rm cyberpam
+
 # Run with basic configuration
 docker run -d \
   --name cyberpam \
+  -v cyberpamdb:/data \
+  -v cyberpamrecordings:/recordings \
   -p 8080:8080 \
   mattrogers/cyberpam:latest
+
+docker logs cyberpam
 ```
+
+> *As of 0.1.1c, the container was designed to user docker volumes for persistence. You could also use a bind mount to the same effect.*
 
 ## ⚡️NOTICE - GET YOUR ADMIN PASSWORD👋
 
