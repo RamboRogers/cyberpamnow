@@ -33,6 +33,7 @@ CyberPAM is a comprehensive Zero Trust Privileged Access Management solution des
 - Added more fonts (bugfix)
 - Reworked container storage (db persistence)
   - Allows for easier upgrades and backups
+- GUI Improvements and Refactoring
 
 ![New Recording](media/recordings2.png)
 
