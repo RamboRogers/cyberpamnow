@@ -278,7 +278,7 @@ CyberPAM is licensed under a restricted license.<p><i> (c)Matthew Rogers 2024. A
 [![Twitter](https://img.shields.io/badge/Twitter-@rogerscissp-1DA1F2?style=for-the-badge&logo=twitter)](https://x.com/rogerscissp)
 [![Website](https://img.shields.io/badge/Web-matthewrogers.org-00ADD8?style=for-the-badge&logo=google-chrome)](https://matthewrogers.org)
 
-![Matthew Rogers](media/ramborogers.gif)
+![Matthew Rogers](media/ramborogers.png)
 
 </div>
 
