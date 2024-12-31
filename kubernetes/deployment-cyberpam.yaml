@@ -1,0 +1,79 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cyberpam
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cyberpam
+spec:
+  selector:
+    matchLabels:
+      app: cyberpam
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: cyberpam
+    spec:
+      containers:
+        - name: cyberpam
+          image: mattrogers/cyberpam:latest
+          ports:
+            - containerPort: 8080
+              name: http
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 1024Mi
+      volumes:
+        - name: data-volume
+          persistentVolumeClaim:
+            claimName: cyberpam-data
+        - name: recordings-volume
+          persistentVolumeClaim:
+            claimName: cyberpam-recordings
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: cyberpam-data
+  namespace: cyberpam
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: cyberpam-recordings
+  namespace: cyberpam
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cyberpam
+  namespace: cyberpam
+spec:
+  type: LoadBalancer
+  ports:
+    - name: http
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: cyberpam
+

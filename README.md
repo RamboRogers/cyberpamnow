@@ -26,7 +26,7 @@ I made CyberPAM for my own use, but I'm happy to share it with the community. I'
 
 What is PAM? <a href="https://en.wikipedia.org/wiki/Privileged_access_management">PAM</a> is the process of managing access to resources. It is a critical component of any security architecture.
 
-<p align="center"> <b>⚡️ This is a SINGLE CONTAINER and can go from pull to production in 5 minutes 🚀</b> </p>
+<p align="center"> <b>⚡️ This is a SINGLE CONTAINER (Docker or Kubernetes) and can go from pull to production in 5 minutes 🚀</b> </p>
 
 
 ## 🌟 Features
@@ -108,6 +108,7 @@ What is PAM? <a href="https://en.wikipedia.org/wiki/Privileged_access_management
 
 CyberPAM is distributed as a Docker container for easy deployment and a 5 minute setup:
 
+### Docker
  *You can just copy paste this into your terminal 🖥️ to deploy or upgrade*
 ```bash
 # Pull the latest image
@@ -125,6 +126,12 @@ docker run -d \
   mattrogers/cyberpam:latest
 
 docker logs cyberpam
+```
+
+### Kubernetes
+
+```bash
+kubectl apply -f kubernetes/deployment-cyberpam.yaml
 ```
 
 > *As of 0.1.1c, the container was designed to user docker volumes for persistence. You could also use a bind mount to the same effect.*
