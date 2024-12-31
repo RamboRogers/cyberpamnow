@@ -13,7 +13,7 @@
   <p><strong>Zero Trust Privileged Access Management</strong></p>
   <p>🔐 Zero Trust | 🎥 Session Recording | 🌐 Multi-Protocol | 🔒 ABAC Security | 🎨 Beautiful UI</p>
   <p>
-    <img src="https://img.shields.io/badge/version-0.1.0c-blue.svg" alt="Version 0.1.1c">
+    <img src="https://img.shields.io/badge/version-0.2.0c-blue.svg" alt="Version 0.2.0c">
     <img src="https://img.shields.io/badge/go-%3E%3D1.21-00ADD8.svg" alt="Go Version">
     <img src="https://img.shields.io/badge/platform-linux%20%7C%20macos-brightgreen.svg" alt="Platform Support">
     <img src="https://img.shields.io/badge/license-GPLv3-green.svg" alt="License">
@@ -22,20 +22,10 @@
 
 CyberPAM is a comprehensive Zero Trust Privileged Access Management solution designed for secure access to Windows, UNIX systems, and web applications. With its beautiful dark-themed interface and robust security features, it provides enterprise-grade access control and session monitoring capabilities.
 
-## Version CyberPam 0.1.1c
+I made CyberPAM for my own use, but I'm happy to share it with the community. I've been working with PAM products for years and CyberPAM is the culmination of my experience.  Session recording is a must have for any PAM product, and CyberPAM is the best I've seen from an Admin perspective, and user experience. Often implementations of PAM products take a long time to get to production, but not CyberPAM.
 
-***Please keep the issues and enhancement requests coming!***
+<center> <b>⚡️ This is a SINGLE CONTAINER and can go from pull to production in 5 minutes 🚀</b> </center>
 
-- New Recording UI (with status and storage)
-  - Fixes issues with transcoding (was scripted)
-  - Event driven transcoding with nice UI
-- Added SSH Key Authentication
-- Added more fonts (bugfix)
-- Reworked container storage (db persistence)
-  - Allows for easier upgrades and backups
-- GUI Improvements and Refactoring
-
-![New Recording](media/recordings2.png)
 
 ## 🌟 Features
 
@@ -86,7 +76,7 @@ CyberPAM is a comprehensive Zero Trust Privileged Access Management solution des
     </td>
   </tr>
   <tr>
-    <td colspan="2" style="vertical-align: top; padding: 10px; border: 1px solid #ddd;">
+    <td style="vertical-align: top; padding: 10px; border: 1px solid #ddd;">
       <h3 style="margin-top: 0;">Beautiful Interface</h3>
       <ul style="list-style-type: none; padding-left: 0;">
         <li>🌑 Dark-themed modern UI</li>
@@ -95,6 +85,18 @@ CyberPAM is a comprehensive Zero Trust Privileged Access Management solution des
         <li>🔗 Protocol-based grouping</li>
         <li>🔑 Role-based navigation</li>
         <li>🖼️ Enhanced modals</li>
+      </ul>
+    </td>
+    <td style="vertical-align: top; padding: 10px; border: 1px solid #ddd;">
+      <h3 style="margin-top: 0;">Cloudflare Zero Trust Support Built in</h3>
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li>🔒 Enhanced security with identity-based access</li>
+        <li>🌐 Secure access to internal applications without VPN</li>
+        <li>🛡️ Protection against data breaches and cyber threats</li>
+        <li>🔍 Continuous monitoring and logging of user activity</li>
+        <li>🔑 Multi-factor authentication (MFA) enforcement</li>
+        <li>📊 Detailed access control policies and reporting</li>
+        <li>🚀 Simplified user experience with seamless access</li>
       </ul>
     </td>
   </tr>
@@ -226,6 +228,40 @@ Internet -> Cloudflare Zero Trust -> Reverse Proxy (TLS/Cloudflared) -> CyberPAM
 </div>
 
 
+## Version CyberPam 0.2.0c
+- Added Zero Trust Network Access from Cloudflare Support
+- Added many missing features, like user reset
+- Reworkeded more GUI styling inconsistencies
+- Enhanced audit log interface with improved readability and filtering
+- Added CSV export functionality for audit logs
+- Improved system management interface with expanded/compact views
+- Added cyberpunk-themed confirmation dialogs and modals
+- Enhanced system deletion process with animated feedback
+- Added system name display in recordings view
+- Improved date/time formatting in recordings view
+- Added version display in settings page
+- Enhanced navbar consistency across all pages
+- Improved admin status handling and security checks
+- Added Cloudflare IP support for better security logging
+- Enhanced error handling and user feedback
+- Improved mobile responsiveness across all views
+- Removed sensitive data from the audit log
+
+## Version CyberPam 0.1.1c
+
+***Please keep the issues and enhancement requests coming!***
+
+- New Recording UI (with status and storage)
+  - Fixes issues with transcoding (was scripted)
+  - Event driven transcoding with nice UI
+- Added SSH Key Authentication
+- Added more fonts (bugfix)
+- Reworked container storage (db persistence)
+  - Allows for easier upgrades and backups
+- GUI Improvements and Refactoring
+
+![New Recording](media/recordings2.png)
+
 <div align="center">
 
 ## ⚖️ License
@@ -245,3 +281,5 @@ CyberPAM is licensed under a restricted license.<p><i> (c)Matthew Rogers 2024. A
 ![Matthew Rogers](media/ramborogers.gif)
 
 </div>
+
+
