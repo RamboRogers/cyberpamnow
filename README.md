@@ -224,6 +224,10 @@ Internet -> Cloudflare Zero Trust -> Reverse Proxy (TLS/Cloudflared) -> CyberPAM
       <td><img src="media/playback.png" alt="Settings" width="400"/></td>
       <td><img src="media/audit.png" alt="Settings" width="400"/></td>
     </tr>
+    <tr>
+
+<td colspan="2"><img src="media/session.png" alt="Session Recording Demo" width="800"/></td>
+    </tr>
   </table>
 </div>
 
