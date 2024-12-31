@@ -26,7 +26,7 @@ I made CyberPAM for my own use, but I'm happy to share it with the community. I'
 
 What is PAM? <a href="https://en.wikipedia.org/wiki/Privileged_access_management">PAM</a> is the process of managing access to resources. It is a critical component of any security architecture.
 
-<p align="center"> <b>⚡️ This is a SINGLE CONTAINER (Docker or Kubernetes) and can go from pull to production in 5 minutes 🚀</b> </p>
+<p align="center"> <b>⚡️ This is a SINGLE CONTAINER (Docker or Kubernetes) and can go from pull to production in 5 minutes and is PERFECT for a SaaS Product 🚀</b> </p>
 
 
 ## 🌟 Features
