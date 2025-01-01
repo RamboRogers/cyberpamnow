@@ -14,7 +14,6 @@
   <p>🔐 Zero Trust | 🎥 Session Recording | 🌐 Multi-Protocol | 🔒 ABAC Security | 🎨 Beautiful UI</p>
   <p>
     <img src="https://img.shields.io/badge/version-0.2.0c-blue.svg" alt="Version 0.2.0c">
-    <img src="https://img.shields.io/badge/go-%3E%3D1.21-00ADD8.svg" alt="Go Version">
     <img src="https://img.shields.io/badge/platform-linux%20%7C%20macos-brightgreen.svg" alt="Platform Support">
     <img src="https://img.shields.io/badge/license-GPLv3-green.svg" alt="License">
   </p>
