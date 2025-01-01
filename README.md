@@ -184,6 +184,55 @@ cyberpam.yourdomain.com {
 ```
 
 ### Zero Trust Network Access
+
+It's easy to setup a tunnel with Cloudflare Zero Trust.
+
+<table style="width:100%; border-collapse: collapse;">
+<tr>
+<td align="center" width="50%" style="border: 1px solid #ddd; padding: 10px;">
+<strong>1. Navigate to Tunnels</strong><br>
+<img src="media/zerotrust.png" alt="Tunnel" width="400"/>
+</td>
+<td align="center" width="50%" style="border: 1px solid #ddd; padding: 10px;">
+<strong>2. Add a New Tunnel</strong><br>
+<img src="media/addtunnel.png" alt="Add Tunnel" width="400"/>
+</td>
+</tr>
+
+<tr>
+<td align="center" width="50%" style="border: 1px solid #ddd; padding: 10px;">
+<strong>3. Create Your Tunnel</strong><br>
+<img src="media/createtunnel.png" alt="Create Tunnel" width="400"/>
+</td>
+<td align="center" width="50%" style="border: 1px solid #ddd; padding: 10px;">
+<strong>4. Copy Your Token</strong><br>
+<img src="media/copytoken.png" alt="Get Token" width="400"/>
+</td>
+</tr>
+
+<tr>
+<td align="center" width="50%" style="border: 1px solid #ddd; padding: 10px;">
+<strong>5. Save Token Details</strong><br>
+<img src="media/notepad.png" alt="Extract Token" width="400"/>
+</td>
+<td align="center" width="50%" style="border: 1px solid #ddd; padding: 10px;">
+<strong>6. Configure Tunnel</strong><br>
+<img src="media/addtoken.png" alt="Add Tunnel" width="400"/>
+</td>
+</tr>
+
+<tr>
+<td align="center" width="50%" style="border: 1px solid #ddd; padding: 10px;">
+<strong>7. Verify Tunnel Status</strong><br>
+<img src="media/configuretunnel.png" alt="Tunnel Added" width="400"/>
+</td>
+<td align="center" width="50%" style="border: 1px solid #ddd; padding: 10px;">
+<strong>8. Set Access Policies</strong><br>
+<img src="media/policy.png" alt="Tunnel Status" width="400"/>
+</td>
+</tr>
+</table>
+
 We strongly recommend placing CyberPAM behind a Zero Trust solution such as:
 - Cloudflare Zero Trust
 - Zscaler Private Access
@@ -236,8 +285,8 @@ Internet -> Cloudflare Zero Trust -> Reverse Proxy (TLS/Cloudflared) -> CyberPAM
       <td><img src="media/audit.png" alt="Settings" width="400"/></td>
     </tr>
     <tr>
-
-<td colspan="2"><img src="media/session.png" alt="Session Recording Demo" width="800"/></td>
+<td colspan="2"><img src="media/session.png" alt="Session Recording Demo" width="800"/>
+</td>
     </tr>
   </table>
 </div>
