@@ -13,9 +13,8 @@
   <p><strong>Zero Trust Privileged Access Management</strong></p>
   <p>🔐 Zero Trust | 🎥 Session Recording | 🌐 Multi-Protocol | 🔒 ABAC Security | 🎨 Beautiful UI</p>
   <p>
-    <img src="https://img.shields.io/badge/version-0.2.0c-blue.svg" alt="Version 0.2.0c">
+    <img src="https://img.shields.io/badge/version-0.3.0c-blue.svg" alt="Version 0.2.0c">
     <img src="https://img.shields.io/badge/platform-linux%20%7C%20macos-brightgreen.svg" alt="Platform Support">
-    <img src="https://img.shields.io/badge/license-GPLv3-green.svg" alt="License">
   </p>
 </div>
 
@@ -23,11 +22,60 @@ CyberPAM is a comprehensive Zero Trust Privileged Access Management solution des
 
 I made CyberPAM for my own use, but I'm happy to share it with the community. I've been working with PAM products for years and CyberPAM is the culmination of my experience.  Session recording is a must have for any PAM product, and CyberPAM is the best I've seen from an Admin perspective, and user experience. Often implementations of PAM products take a long time to get to production, but not CyberPAM.
 
+<p align="center">
+<a href="ZEROTRUST.md"><b> ⚡️ v0.3.0c Setup Zero Trust Network Access for CyberPAM Targets/Hosts ⚡️</b></a>
+</p>
+
+![ZTDrawing](media/drawing.png)
+
 ![PAM Chart](media/pam.png)
 
 What is PAM? <a href="https://en.wikipedia.org/wiki/Privileged_access_management">PAM</a> is the process of managing access to resources. It is a critical component of any security architecture.
 
 <p align="center"> <b>⚡️ This is a SINGLE CONTAINER (Docker or Kubernetes) and can go from pull to production in 5 minutes and is PERFECT for a SaaS Product 🚀</b> </p>
+
+
+## 🚀 Quick Start
+
+CyberPAM is distributed as a Docker container for easy deployment and a 5 minute setup:
+
+### Docker
+ *You can just copy paste this into your terminal 🖥️ to deploy or upgrade*
+```bash
+# Pull the latest image
+docker pull mattrogers/cyberpam:latest
+
+docker stop cyberpam
+docker rm cyberpam
+
+# Run with basic configuration
+docker run -d \
+  --name cyberpam \
+  -v cyberpamdb:/data \
+  -v cyberpamrecordings:/recordings \
+  -p 8080:8080 \
+  mattrogers/cyberpam:latest
+
+docker logs cyberpam
+```
+
+### Kubernetes
+
+```bash
+kubectl apply -f kubernetes/deployment-cyberpam.yaml
+```
+
+## ⚡️NOTICE - GET YOUR ADMIN PASSWORD👋
+
+Access the web interface at `http://localhost:8080` after starting the container. The initial admin credentials will be displayed in the container logs:
+
+```bash
+# View initial admin credentials
+docker logs cyberpam
+```
+
+![CyberPAM Login](media/password.png)
+
 
 
 ## 🌟 Features
@@ -105,69 +153,6 @@ What is PAM? <a href="https://en.wikipedia.org/wiki/Privileged_access_management
   </tr>
 </table>
 
-## 🚀 Quick Start
-
-CyberPAM is distributed as a Docker container for easy deployment and a 5 minute setup:
-
-### Docker
- *You can just copy paste this into your terminal 🖥️ to deploy or upgrade*
-```bash
-# Pull the latest image
-docker pull mattrogers/cyberpam:latest
-
-docker stop cyberpam
-docker rm cyberpam
-
-# Run with basic configuration
-docker run -d \
-  --name cyberpam \
-  -v cyberpamdb:/data \
-  -v cyberpamrecordings:/recordings \
-  -p 8080:8080 \
-  mattrogers/cyberpam:latest
-
-docker logs cyberpam
-```
-
-### Kubernetes
-
-```bash
-kubectl apply -f kubernetes/deployment-cyberpam.yaml
-```
-
-> *As of 0.1.1c, the container was designed to user docker volumes for persistence. You could also use a bind mount to the same effect.*
-
-## ⚡️NOTICE - GET YOUR ADMIN PASSWORD👋
-
-Access the web interface at `http://localhost:8080` after starting the container. The initial admin credentials will be displayed in the container logs:
-
-```bash
-# View initial admin credentials
-docker logs cyberpam
-```
-
-![CyberPAM Login](media/password.png)
-
-
-### 📂 External Recordings Storage
-
-```
-# Run with external recordings storage
-docker run -d \
-  --name cyberpam \
-  -p 8080:8080 \
-  -v /your/local/path:/recordings \
-  mattrogers/cyberpam:latest
-```
-
-The `/recordings` volume binding is optional but recommended for:
-- Persistent storage of session recordings outside the container
-- Easy access to recording files for backup
-- Sharing recordings between container recreations
-- Integration with external video processing tools
-
-
-
 ## 🔧️ Security Notice
 
 CyberPAM is designed to be deployed behind a reverse proxy that handles SSL/TLS termination and additional security controls. We recommend:
@@ -182,9 +167,9 @@ cyberpam.yourdomain.com {
 }
 ```
 
-### Zero Trust Network Access
+### Zero Trust Network Access INTO CyberPAM
 
-It's easy to setup a tunnel with Cloudflare Zero Trust.
+It's easy to setup a tunnel with Cloudflare Zero Trust into CyberPAM.
 
 <table style="width:100%; border-collapse: collapse;">
 <tr>
@@ -290,6 +275,10 @@ Internet -> Cloudflare Zero Trust -> Reverse Proxy (TLS/Cloudflared) -> CyberPAM
   </table>
 </div>
 
+## Version CyberPam 0.3.0c
+- ***Added Zero Trust Network Access from Cloudflare Support***
+- Added ZTNA Agent https://github.com/RamboRogers/cyberpamagent
+- GUI Refactoring and improvements
 
 ## Version CyberPam 0.2.0c
 - Added Zero Trust Network Access from Cloudflare Support
