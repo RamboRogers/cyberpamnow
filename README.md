@@ -289,20 +289,23 @@ Internet -> Cloudflare Zero Trust -> Reverse Proxy (TLS/Cloudflared) -> CyberPAM
 <div align="center">
   <table>
     <tr>
-      <td><img src="media/welcome.png" alt="Login Screen" width="400"/></td>
-      <td><img src="media/systems.png" alt="Systems Dashboard" width="400"/></td>
+      <td><img src="media/cyberpam4-home.png" alt="Modern Dashboard" width="400"/></td>
+      <td><img src="media/cyberpam4-systems.png" alt="Systems Management" width="400"/></td>
     </tr>
     <tr>
-      <td><img src="media/recordings.png" alt="Session Recordings" width="400"/></td>
-      <td><img src="media/users.png" alt="User Management" width="400"/></td>
+      <td><img src="media/cyberpam4-recordings.png" alt="Session Recordings" width="400"/></td>
+      <td><img src="media/cyberpam4-recordings-playback.png" alt="Session Playback" width="400"/></td>
     </tr>
     <tr>
-      <td><img src="media/playback.png" alt="Settings" width="400"/></td>
-      <td><img src="media/audit.png" alt="Settings" width="400"/></td>
+      <td><img src="media/cyberpam4-users.png" alt="User Management" width="400"/></td>
+      <td><img src="media/cyberpam4-audit.png" alt="Audit Logs" width="400"/></td>
     </tr>
     <tr>
-<td colspan="2"><img src="media/session.png" alt="Session Recording Demo" width="800"/>
-</td>
+      <td><img src="media/cyberpam4-tags-details.png" alt="Advanced Tagging" width="400"/></td>
+      <td><img src="media/cyberpam4-systems-expanded.png" alt="Expanded System View" width="400"/></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"><img src="media/cyberpam4.gif" alt="Session Recording Demo" width="800"/></td>
     </tr>
   </table>
 </div>
