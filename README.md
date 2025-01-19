@@ -26,10 +26,16 @@ I made CyberPAM for my own use, but I'm happy to share it with the community. I'
 
 <p align="center">
 <b> ⚡️ v0.4.0c Setup Zero Trust Network Access for CyberPAM Targets/Hosts ⚡️</b>
-
-![tag flow](media/tagsdrawing.png)
-
-![tags](media/tags.png)
+<table>
+<tr>
+<td>
+<img src="media/tagsdrawing.png" width="100%" alt="Tag Flow">
+</td>
+<td>
+<img src="media/tags.png" width="100%" alt="Tags">
+</td>
+</tr>
+</table>
 
 </p>
 
@@ -37,12 +43,16 @@ I made CyberPAM for my own use, but I'm happy to share it with the community. I'
 
 <p align="center">
 <a href="ZEROTRUST.md"><b> ⚡️ v0.3.0c Setup Zero Trust Network Access for CyberPAM Targets/Hosts ⚡️</b></a>
-
-
-![ZTDrawing](media/tagsdrawing.png)
-
-![PAM Chart](media/pam.png)
-
+<table>
+<tr>
+<td>
+<img src="media/pam.png" width="100%" alt="Tag Flow">
+</td>
+<td>
+<img src="media/drawing.png" width="100%" alt="Tags">
+</td>
+</tr>
+</table>
 </p>
 
 What is PAM? <a href="https://en.wikipedia.org/wiki/Privileged_access_management">PAM</a> is the process of managing access to resources. It is a critical component of any security architecture.
