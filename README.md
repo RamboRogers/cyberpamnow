@@ -124,6 +124,7 @@ docker logs cyberpam
       <ul style="list-style-type: none; padding-left: 0;">
         <li>🖥️ RDP (Remote Desktop Protocol)</li>
         <li>🔗 SSH (Secure Shell)</li>
+        <li>🖼️ VNC (Virtual Network Computing)</li>
         <li>🌐 HTTPS (automatic)</li>
       </ul>
     </td>
