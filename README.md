@@ -13,7 +13,7 @@
   <p><strong>Zero Trust Privileged Access Management</strong></p>
   <p>🔐 Zero Trust | 🎥 Session Recording | 🌐 Multi-Protocol | 🔒 ABAC Security | 🎨 Beautiful UI</p>
   <p>
-    <img src="https://img.shields.io/badge/version-0.3.0c-blue.svg" alt="Version 0.2.0c">
+    <img src="https://img.shields.io/badge/version-0.4.0c-blue.svg" alt="Version 0.4.0c">
     <img src="https://img.shields.io/badge/platform-linux%20%7C%20macos-brightgreen.svg" alt="Platform Support">
   </p>
 </div>
@@ -22,13 +22,28 @@ CyberPAM is a comprehensive Zero Trust Privileged Access Management solution des
 
 I made CyberPAM for my own use, but I'm happy to share it with the community. I've been working with PAM products for years and CyberPAM is the culmination of my experience.  Session recording is a must have for any PAM product, and CyberPAM is the best I've seen from an Admin perspective, and user experience. Often implementations of PAM products take a long time to get to production, but not CyberPAM.
 
+
+
 <p align="center">
-<a href="ZEROTRUST.md"><b> ⚡️ v0.3.0c Setup Zero Trust Network Access for CyberPAM Targets/Hosts ⚡️</b></a>
+<b> ⚡️ v0.4.0c Setup Zero Trust Network Access for CyberPAM Targets/Hosts ⚡️</b>
+
+![alt text](image.png)
+
+![alt text](media/tags.png)
+
 </p>
 
-![ZTDrawing](media/drawing.png)
+
+
+<p align="center">
+<a href="ZEROTRUST.md"><b> ⚡️ v0.3.0c Setup Zero Trust Network Access for CyberPAM Targets/Hosts ⚡️</b></a>
+
+
+![ZTDrawing](media/tagsdrawing.png)
 
 ![PAM Chart](media/pam.png)
+
+</p>
 
 What is PAM? <a href="https://en.wikipedia.org/wiki/Privileged_access_management">PAM</a> is the process of managing access to resources. It is a critical component of any security architecture.
 
@@ -91,6 +106,7 @@ docker logs cyberpam
         <li>📝 Comprehensive audit logging for compliance</li>
         <li>🎥 Session recording with video playback</li>
         <li>🔐 Password complexity enforcement</li>
+        <li>🔍 Tag-based access control</li>
       </ul>
     </td>
     <td style="vertical-align: top; padding: 10px; border: 1px solid #ddd;">
@@ -274,6 +290,40 @@ Internet -> Cloudflare Zero Trust -> Reverse Proxy (TLS/Cloudflared) -> CyberPAM
     </tr>
   </table>
 </div>
+
+## Version CyberPam 0.4.0c
+### Major Features
+- **Advanced Tagging System**
+  - Tag-based access control for systems and users
+  - Hierarchical system organization
+  - Improved system grouping and filtering
+  - Tag-based search functionality
+  - Admin-controlled tag management
+
+- **Enhanced Security**
+  - Automatic HTTPS configuration
+  - Improved password handling and security
+  - Enhanced logging with sensitive data redaction
+  - Strengthened error handling and security feedback
+
+- **Usability Improvements**
+  - Streamlined connection workflow
+  - Improved error messages with modal dialogs
+  - Enhanced system card management
+  - Better session handling and state management
+  - Refined dark theme and UI consistency
+
+- **System Management**
+  - Advanced system filtering and organization
+  - Improved system card layout and interactions
+  - Enhanced system editing capabilities
+  - Better protocol-specific configurations
+
+- **Authentication Enhancements**
+  - Improved password management workflow
+  - Better SSH key handling
+  - Enhanced multi-protocol authentication
+  - Streamlined connection process
 
 ## Version CyberPam 0.3.0c
 - ***Added Zero Trust Network Access from Cloudflare Support***
