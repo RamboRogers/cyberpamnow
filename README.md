@@ -307,7 +307,7 @@ Internet -> Cloudflare Zero Trust -> Reverse Proxy (TLS/Cloudflared) -> CyberPAM
 4. Change password and set up TOTP
 5. Begin adding systems and users
 
-## 🎯 Use Cases
+### 🎯 Use Cases
 
 - **Privileged Access Management**: Secure access to critical systems
 - **Session Monitoring**: Record and audit all user sessions
