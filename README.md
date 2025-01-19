@@ -92,7 +92,7 @@ kubectl apply -f kubernetes/deployment-cyberpam.yaml
 
 ## ⚡️NOTICE - GET YOUR ADMIN PASSWORD👋
 
-Access the web interface at `http://localhost:8080` after starting the container. The initial admin credentials will be displayed in the container logs:
+Access the web interface at `https://localhost:8080` after starting the container. The initial admin credentials will be displayed in the container logs:
 
 ```bash
 # View initial admin credentials
@@ -124,7 +124,7 @@ docker logs cyberpam
       <ul style="list-style-type: none; padding-left: 0;">
         <li>🖥️ RDP (Remote Desktop Protocol)</li>
         <li>🔗 SSH (Secure Shell)</li>
-        <li>🌐 HTTP/HTTPS (planned)</li>
+        <li>🌐 HTTPS (automatic)</li>
       </ul>
     </td>
   </tr>
