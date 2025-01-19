@@ -35,6 +35,11 @@ I made CyberPAM for my own use, but I'm happy to share it with the community. I'
 <img src="media/tags.png" width="100%" alt="Tags">
 </td>
 </tr>
+<tr>
+<td colspan="2">
+<img src="media/usage.png" width="100%" alt="Usage">
+</td>
+</tr>
 </table>
 
 </p>
