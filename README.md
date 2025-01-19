@@ -20,6 +20,8 @@
 
 CyberPAM is a comprehensive Zero Trust Privileged Access Management solution designed for secure access to Windows, UNIX systems, and web applications. With its beautiful dark-themed interface and robust security features, it provides enterprise-grade access control and session monitoring capabilities.
 
+I made CyberPAM for my own use, but I'm happy to share it with the community. I've been working with PAM products for years and CyberPAM is the culmination of my experience.  Session recording is a must have for any PAM product, and CyberPAM is the best I've seen from an Admin perspective, and user experience. Often implementations of PAM products take a long time to get to production, but not CyberPAM.
+
 ## 🎯 Top Use Cases
 
 <table>
@@ -49,7 +51,7 @@ CyberPAM is a comprehensive Zero Trust Privileged Access Management solution des
   </tr>
 </table>
 
-I made CyberPAM for my own use, but I'm happy to share it with the community. I've been working with PAM products for years and CyberPAM is the culmination of my experience.  Session recording is a must have for any PAM product, and CyberPAM is the best I've seen from an Admin perspective, and user experience. Often implementations of PAM products take a long time to get to production, but not CyberPAM.
+
 
 
 
