@@ -27,9 +27,9 @@ I made CyberPAM for my own use, but I'm happy to share it with the community. I'
 <p align="center">
 <b> ⚡️ v0.4.0c Setup Zero Trust Network Access for CyberPAM Targets/Hosts ⚡️</b>
 
-![alt text](image.png)
+![tag flow](media/tagsdrawing.png)
 
-![alt text](media/tags.png)
+![tags](media/tags.png)
 
 </p>
 
