@@ -3,6 +3,9 @@
   <tr>
     <td align="center" width="50%"><strong>Session Recording</strong></td>
   </tr>
+    <tr>
+    <td align="center"><img src="media/CyberPAM-0.6.0c.gif" width="100%" alt="Session Recording Demo"></td>
+  </tr>
   <tr>
     <td align="center"><img src="media/cyberpam4.gif" width="100%" alt="Session Recording Demo"></td>
   </tr>
