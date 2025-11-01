@@ -13,7 +13,7 @@
   <p><strong>Zero Trust Privileged Access Management</strong></p>
   <p>🔐 Zero Trust | 🎥 Session Recording | 🌐 Multi-Protocol | 🔒 ABAC Security | 🎨 Beautiful UI</p>
   <p>
-    <img src="https://img.shields.io/badge/version-0.4.0c-blue.svg" alt="Version 0.4.0c">
+    <img src="https://img.shields.io/badge/version-0.6.0c-blue.svg" alt="Version 0.6.0c">
     <img src="https://img.shields.io/badge/platform-linux%20%7C%20macos-brightgreen.svg" alt="Platform Support">
   </p>
 </div>
@@ -52,6 +52,27 @@ I made CyberPAM for my own use, but I'm happy to share it with the community. I'
 </table>
 
 
+<p align="center">
+<b> ⚡️ v0.6.0c Full HTTPS Connection Support with Recording/Playback and Logging⚡️</b>
+
+> This is fully enscapsulated and isolated from the rest of the system. The browser is access via h264 encoding and it not accessible to the client outside of the sandbox. Passowords are securely passed into the internal browser and can only be pasted into the input fields, and are cleared on cursor movement out of the window.
+<table>
+<tr>
+<td>
+<img src="media/browser-pick.png" width="100%" alt="Browser Pick">
+</td>
+<td>
+<img src="media/browser.jpg" width="100%" alt="Browser">
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<img src="media/browserview.png" width="100%" alt="Browser View">
+</td>
+</tr>
+</table>
+
+</p>
 
 
 
